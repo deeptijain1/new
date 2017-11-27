@@ -1,0 +1,15 @@
+- hosts: all
+  environment:
+      DISPLAY: ":0"
+      SOME: value
+
+  tasks:
+    - debug:  msg="I am here there" 
+
+    - name : set environment 
+      command :  p4.py
+
+
+
+
+
